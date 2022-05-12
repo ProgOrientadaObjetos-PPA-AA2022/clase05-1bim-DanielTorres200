@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paquetedos;
-
+package paquete02;
+import paquete03.Autor;
 /**
  *
  * @author reroes
@@ -14,6 +14,8 @@ public class Ejecutor {
     public static void main(String[] args) {
         // Se crea un objeto de tipo Autor
         Autor aut = new Autor("José", "Alvear");
+        String pass = "1434t5t433";
+        aut.establecerPasaporte(pass);
 
         // Se crea un objeto de tipo Publicación
         int anioPublicacion = 2000;
@@ -24,7 +26,10 @@ public class Ejecutor {
                 + "Año de Publicación: %d\n",
                 p.obtenerAutor().obtenerNombre(),
                 p.obtenerAutor().obtenerApellido(),
+                p.obtenerAutor().obtenerPasaporte(),
                 p.obtenerAnioPublicacion());
+                
+        
         
         aut.establecerApellido("Elizalde");
         
@@ -32,6 +37,7 @@ public class Ejecutor {
                 + "Año de Publicación: %d\n",
                 p.obtenerAutor().obtenerNombre(),
                 p.obtenerAutor().obtenerApellido(),
+                p.obtenerAutor().obtenerPasaporte(),
                 p.obtenerAnioPublicacion());
         
         
